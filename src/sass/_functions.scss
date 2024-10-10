@@ -1,0 +1,7 @@
+// Import math module
+@use "sass:math";
+
+// Function for converting a px based font-size to rem.
+@function pxToRem($px) { 
+  @return math.div($px, 16) * 1rem; 
+}
