@@ -1,0 +1,31 @@
+@use 'functions' as *;
+
+$bg-clr-card-1: hsl(263, 55%, 52%);
+$bg-clr-card-2: hsl(217, 19%, 35%);
+$bg-clr-card-4: hsl(217, 30%, 14%);
+$bg-clr-white: hsl(0, 0%, 100%);
+$bg-clr-card-3: hsl(0, 0%, 81%);
+$bg-clr-body: hsl(210, 46%, 95%);
+// $brand-secondary: hsl(228, 45%, 44%);
+// $clr-bg-body: hsl(210, 46%, 95%);
+
+$opacity-status: 50%;
+$opacity-para-2: 70%;
+
+$fs-body: pxToRem(13);
+$fs-small: pxToRem(11);
+
+$fw-medium: 500;
+$fw-semibold: 600;
+
+$space-sm: pxToRem(14);
+$space-md: pxToRem(16);
+$space-lg: pxToRem(24);
+$space-xl: pxToRem(32);
+$card-width-mobile: pxToRem(327);
+$card-width-desktop: pxToRem(1112);
+
+$box-shadow: 20px 8px 50px -10px rgba(0, 0, 0, 0.1);
+$bd-radius: pxToRem(8px);
+
+// $clr: hsl(213, 12%, 35%);
