@@ -14,18 +14,22 @@ $opacity-para-2: 70%;
 
 $fs-body: pxToRem(13);
 $fs-small: pxToRem(11);
+$fs-para-1: pxToRem(20);
 
 $fw-medium: 500;
 $fw-semibold: 600;
 
+$ff-body: "Barlow Semi Condensed", sans-serif;
+
 $space-sm: pxToRem(14);
 $space-md: pxToRem(16);
-$space-lg: pxToRem(24);
-$space-xl: pxToRem(32);
-$card-width-mobile: pxToRem(327);
-$card-width-desktop: pxToRem(1112);
+$space-lg: pxToRem(25);
+$space-xl: pxToRem(30);
+$space-2xl: pxToRem(72);
+$max-width-mobile: pxToRem(327);
+$max-width-desktop: pxToRem(1112);
 
 $box-shadow: 20px 8px 50px -10px rgba(0, 0, 0, 0.1);
-$bd-radius: pxToRem(8px);
+$bd-radius: pxToRem(8);
 
 // $clr: hsl(213, 12%, 35%);

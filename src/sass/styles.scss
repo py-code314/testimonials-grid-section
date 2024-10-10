@@ -1,0 +1,82 @@
+@use 'variables' as *;
+@use 'reset' as *;
+
+
+body {
+  min-height: 100svh;
+  background-color: $bg-clr-body;
+  font-family: $ff-body;
+  font-size: $fs-body;
+  font-weight: $fw-medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $space-2xl 0;
+}
+
+.testimonials {
+  max-inline-size: $max-width-mobile;
+  display: grid;
+  gap: 24px;
+
+  
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.testimonial {
+  padding: 24px 30px 32px 32px;
+  border-radius: $bd-radius;
+  
+ 
+  
+}
+
+.daniel {
+  background-color: $bg-clr-card-1;
+}
+
+figcaption {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  div {
+    line-height: 1.3;
+    
+  }
+  img {
+    border-radius: 50%;
+  }
+}
+
+.testimonial__status {
+  opacity: $opacity-status;
+  font-size: $fs-small;
+  letter-spacing: 0.01px;
+}
+
+.testimonial__para-1 {
+  font-size: 20px; 
+  font-weight: $fw-semibold; 
+  line-height: 1.2; 
+  letter-spacing: 0.1px; 
+  
+  margin-block: $space-md;
+}
+
+.testimonial__para-2 {
+  opacity: $opacity-para-2;
+  line-height: 1.4; 
+  letter-spacing: 0.005em;
+}
