@@ -29,9 +29,24 @@ body {
 .testimonials {
   max-inline-size: $card-width;
   display: grid;
+  grid-template-areas: 
+  'daniel'
+  'jonathan'
+  'jeanette'
+  'patrick'
+  'kira';
   gap: $space-lg;
 
-  
+  @include tablet {
+    grid-template: {
+      columns: repeat(3, 1fr);
+      areas:
+        'daniel daniel jonathan'
+        'jeanette patrick patrick'
+        'kira kira kira';
+
+    }
+  }
 
   @include desktop {
     grid-template: {
@@ -45,7 +60,8 @@ body {
 
 .testimonial {
   @include card;
-  // grid-area: daniel;
+  grid-area: daniel;
+
   &:nth-child(1) {
     @include colors($moderate-violet-clr);
     @include image-border;
@@ -54,39 +70,39 @@ body {
     background-position: top 0 right 10%;
     background-repeat: no-repeat;
 
+    @include tablet; 
     @include desktop {
-      grid-area: daniel;
       background-position: top 0 right 20%;
     }
   }
 
   &:nth-child(2) {
+    grid-area: jonathan;
     @include colors($very-dark-grayish-blue-clr);
-    @include desktop {
-      grid-area: jonathan;
-    }
+    @include tablet; 
+    @include desktop; 
   }
 
   &:nth-child(3) {
+    grid-area: jeanette;
     @include colors($white-clr, $very-dark-grayish-blue-clr);
-    @include desktop {
-      grid-area: jeanette;
-    }
+    @include tablet; 
+    @include desktop; 
   }
 
   &:nth-child(4) {
+    grid-area: patrick;
     @include colors($very-dark-blackish-blue-clr);
     @include image-border;
-    @include desktop {
-      grid-area: patrick;
-    }
+    @include tablet; 
+    @include desktop; 
   }
 
   &:nth-child(5) {
+    grid-area: kira;
     @include colors($white-clr, $very-dark-grayish-blue-clr);
-    @include desktop {
-      grid-area: kira;
-    }
+    @include tablet; 
+    @include desktop; 
   }
 }
 

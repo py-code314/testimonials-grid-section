@@ -18,7 +18,12 @@
   
 }
 
-
+// 768px
+@mixin tablet {
+  @media (min-width: 48em) {
+    @content;
+  }
+}
 
 // 1000px
 @mixin desktop {
