@@ -32,12 +32,6 @@ body {
   padding: 4.5rem 0;
 }
 
-.testimonials {
-  max-inline-size: 20.4375rem;
-  display: grid;
-  gap: 1.5rem;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -50,29 +44,41 @@ body {
   border: 0;
 }
 
+.testimonials {
+  max-inline-size: 20.4375rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
 .testimonial {
   padding: 1.5rem 1.875rem 2rem 2rem;
   border-radius: 0.5rem;
+  box-shadow: 20px 8px 50px -10px hsla(0, 0%, 0%, 0.3);
 }
 .testimonial:nth-child(1) {
   background-color: hsl(263, 55%, 52%);
   color: hsl(0, 0%, 100%);
+  background-image: url("./../assets/images/bg-pattern-quotation.svg");
+  background-position: top right 10%;
+  background-repeat: no-repeat;
+}
+.testimonial:nth-child(1) img {
+  border: 2px solid hsl(263, 55%, 67%);
 }
 .testimonial:nth-child(2) {
   background-color: hsl(217, 19%, 35%);
   color: hsl(0, 0%, 100%);
 }
-.testimonial:nth-child(3) {
+.testimonial:nth-child(3), .testimonial:nth-child(5) {
   background-color: hsl(0, 0%, 100%);
-  color: #000;
+  color: hsl(217, 19%, 35%);
 }
 .testimonial:nth-child(4) {
-  background-color: hsl(217, 29%, 14%);
+  background-color: hsl(219, 29%, 14%);
   color: hsl(0, 0%, 100%);
 }
-.testimonial:nth-child(5) {
-  background-color: hsl(0, 0%, 100%);
-  color: #000;
+.testimonial:nth-child(4) img {
+  border: 2px solid hsl(263, 55%, 67%);
 }
 
 figcaption {

@@ -1,6 +1,19 @@
 @use 'variables' as *;
 
-@mixin colors($bg-clr, $text-clr: #000) {
+@mixin colors($bg-clr, $text-clr: $white-clr) {
   background-color: $bg-clr;
   color: $text-clr;
+}
+
+@mixin card {
+  padding: $space-lg $space-xl $space-2xl $space-2xl;
+  border-radius: $bd-rounded;
+  box-shadow: $box-shadow;
+}
+
+@mixin image-border {
+  img {
+    border: 2px solid lighten($moderate-violet-clr, 15%);
+  }
+  
 }

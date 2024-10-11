@@ -2,25 +2,16 @@
 @use 'reset' as *;
 @use 'mixins' as *;
 
-
 body {
   min-height: 100svh;
-  background-color: $bg-clr-body;
-  font-family: $ff-body;
-  font-size: $fs-body;
+  background-color: $light-grayish-blue-clr;
+  font-family: $ff-barlow;
+  font-size: $fs-md;
   font-weight: $fw-medium;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: $space-3xl 0;
-}
-
-.testimonials {
-  max-inline-size: $max-width-mobile;
-  display: grid;
-  gap: $space-lg;
-
-  
 }
 
 .sr-only {
@@ -35,33 +26,42 @@ body {
   border: 0;
 }
 
-.testimonial {
-  padding: $space-lg $space-xl $space-2xl $space-2xl;
-  border-radius: $bd-radius;
-  
- &:nth-child(1) {
-  @include colors($bg-clr-card-1, $clr-white);
- }
-
- &:nth-child(2) {
-  @include colors($bg-clr-card-2, $clr-white);
- }
-
- &:nth-child(3) {
-  @include colors($bg-clr-card-3);
- }
-
- &:nth-child(4) {
-  @include colors($bg-clr-card-4, $clr-white);
- }
-
- &:nth-child(5) {
-  @include colors($bg-clr-card-3);
- }
-  
+.testimonials {
+  max-inline-size: $width-mobile;
+  display: grid;
+  gap: $space-lg;
 }
 
 
+
+.testimonial {
+  @include card;
+
+  &:nth-child(1) {
+    @include colors($moderate-violet-clr);
+    @include image-border;
+
+    background-image: url('./../assets/images/bg-pattern-quotation.svg');
+    background-position: top right 10%;
+    background-repeat: no-repeat;
+
+    
+  }
+
+  &:nth-child(2) {
+    @include colors($very-dark-grayish-blue-clr);
+  }
+
+  &:nth-child(3),
+  &:nth-child(5) {
+    @include colors($white-clr, $very-dark-grayish-blue-clr);
+  }
+
+  &:nth-child(4) {
+    @include colors($very-dark-blackish-blue-clr);
+    @include image-border;
+  }
+}
 
 figcaption {
   display: flex;
@@ -70,7 +70,6 @@ figcaption {
 
   div {
     line-height: 1.3;
-    
   }
   img {
     border-radius: 50%;
@@ -82,8 +81,8 @@ figcaption {
 // }
 
 .testimonial__status {
-  opacity: $opacity-status;
-  font-size: $fs-small;
+  opacity: $opacity-50;
+  font-size: $fs-sm;
   letter-spacing: 0.0009em;
 }
 
@@ -91,15 +90,15 @@ figcaption {
 //   letter-spacing: 0.005em;
 // }
 .testimonial__para-1 {
-  font-size: $fs-para-1; 
-  font-weight: $fw-semibold; 
-  line-height: 1.2; 
-  letter-spacing: 0.005em; 
+  font-size: $fs-lg;
+  font-weight: $fw-semibold;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
   margin-block: $space-md;
 }
 
 .testimonial__para-2 {
-  opacity: $opacity-para-2;
-  line-height: 1.4; 
+  opacity: $opacity-70;
+  line-height: 1.4;
   letter-spacing: 0.005em;
 }

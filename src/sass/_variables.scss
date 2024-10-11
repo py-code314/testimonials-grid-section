@@ -1,25 +1,24 @@
 @use 'functions' as *;
 
-$bg-clr-card-1: hsl(263, 55%, 52%);
-$bg-clr-card-2: hsl(217, 19%, 35%);
-$bg-clr-card-4: hsl(217, 29%, 14%);
-$clr-white: hsl(0, 0%, 100%);
-$bg-clr-card-3: hsl(0, 0%, 100%);
-// $bg-clr-card-3: hsl(0, 0%, 81%);
-$bg-clr-body: hsl(210, 46%, 95%);
+$moderate-violet-clr: hsl(263, 55%, 52%);
+$very-dark-grayish-blue-clr: hsl(217, 19%, 35%);
+$very-dark-blackish-blue-clr: hsl(219, 29%, 14%);
+$white-clr: hsl(0, 0%, 100%);
+// $light-gray-clr: hsl(0, 0%, 81%);
+$light-grayish-blue-clr: hsl(210, 46%, 95%);
 // $brand-secondary: hsl(228, 45%, 44%);
 
-$opacity-status: 50%;
-$opacity-para-2: 70%;
+$opacity-50: 50%;
+$opacity-70: 70%;
 
-$fs-body: pxToRem(13);
-$fs-small: pxToRem(11);
-$fs-para-1: pxToRem(20);
+$fs-sm: pxToRem(11);
+$fs-md: pxToRem(13);
+$fs-lg: pxToRem(20);
 
 $fw-medium: 500;
 $fw-semibold: 600;
 
-$ff-body: "Barlow Semi Condensed", sans-serif;
+$ff-barlow: "Barlow Semi Condensed", sans-serif;
 
 $space-sm: pxToRem(14);
 $space-md: pxToRem(16);
@@ -27,10 +26,10 @@ $space-lg: pxToRem(24);
 $space-xl: pxToRem(30);
 $space-2xl: pxToRem(32);
 $space-3xl: pxToRem(72);
-$max-width-mobile: pxToRem(327);
-$max-width-desktop: pxToRem(1112);
+$width-mobile: pxToRem(327);
+$width-desktop: pxToRem(1112);
 
-$box-shadow: 20px 8px 50px -10px rgba(0, 0, 0, 0.1);
-$bd-radius: pxToRem(8);
+$box-shadow: 20px 8px 50px -10px hsla(0, 0%, 0%, 0.3);
+$bd-rounded: pxToRem(8);
 
 // $clr: hsl(213, 12%, 35%);
