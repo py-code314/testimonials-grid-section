@@ -26,10 +26,11 @@ $space-lg: pxToRem(24);
 $space-xl: pxToRem(30);
 $space-2xl: pxToRem(32);
 $space-3xl: pxToRem(72);
-$width-mobile: pxToRem(327);
-$width-desktop: pxToRem(1112);
+// $width-mobile: pxToRem(327);
+// $width-desktop: pxToRem(1112);
+$card-width: clamp(20.438rem, 3.162rem + 73.709vw, 69.5rem);
 
-$box-shadow: 20px 8px 50px -10px hsla(0, 0%, 0%, 0.3);
+$box-shadow: pxToRem(20) pxToRem(8) pxToRem(50) pxToRem(-10) hsla(0, 0%, 0%, 0.3);
 $bd-rounded: pxToRem(8);
 
 // $clr: hsl(213, 12%, 35%);

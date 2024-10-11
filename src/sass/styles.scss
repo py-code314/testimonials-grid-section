@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: $space-3xl 0;
+  padding: $space-3xl $space-md;
 }
 
 .sr-only {
@@ -27,39 +27,66 @@ body {
 }
 
 .testimonials {
-  max-inline-size: $width-mobile;
+  max-inline-size: $card-width;
   display: grid;
   gap: $space-lg;
+
+  
+
+  @include desktop {
+    grid-template: {
+      columns: repeat(4, 1fr);
+      areas: 
+        'daniel daniel jonathan kira'
+        'jeanette patrick patrick kira';
+    }
+  }
 }
-
-
 
 .testimonial {
   @include card;
-
+  // grid-area: daniel;
   &:nth-child(1) {
     @include colors($moderate-violet-clr);
     @include image-border;
 
     background-image: url('./../assets/images/bg-pattern-quotation.svg');
-    background-position: top right 10%;
+    background-position: top 0 right 10%;
     background-repeat: no-repeat;
 
-    
+    @include desktop {
+      grid-area: daniel;
+      background-position: top 0 right 20%;
+    }
   }
 
   &:nth-child(2) {
     @include colors($very-dark-grayish-blue-clr);
+    @include desktop {
+      grid-area: jonathan;
+    }
   }
 
-  &:nth-child(3),
-  &:nth-child(5) {
+  &:nth-child(3) {
     @include colors($white-clr, $very-dark-grayish-blue-clr);
+    @include desktop {
+      grid-area: jeanette;
+    }
   }
 
   &:nth-child(4) {
     @include colors($very-dark-blackish-blue-clr);
     @include image-border;
+    @include desktop {
+      grid-area: patrick;
+    }
+  }
+
+  &:nth-child(5) {
+    @include colors($white-clr, $very-dark-grayish-blue-clr);
+    @include desktop {
+      grid-area: kira;
+    }
   }
 }
 
@@ -73,12 +100,11 @@ figcaption {
   }
   img {
     border-radius: 50%;
+    overflow: hidden;
   }
 }
 
-// .testimonial__name {
-//   font-weight: $fw-semibold;
-// }
+
 
 .testimonial__status {
   opacity: $opacity-50;
@@ -86,15 +112,13 @@ figcaption {
   letter-spacing: 0.0009em;
 }
 
-// blockquote {
-//   letter-spacing: 0.005em;
-// }
+
 .testimonial__para-1 {
   font-size: $fs-lg;
   font-weight: $fw-semibold;
   line-height: 1.2;
   letter-spacing: 0.005em;
-  margin-block: $space-md;
+  margin-block: 1rem;
 }
 
 .testimonial__para-2 {

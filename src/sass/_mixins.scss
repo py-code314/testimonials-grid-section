@@ -6,7 +6,7 @@
 }
 
 @mixin card {
-  padding: $space-lg $space-xl $space-2xl $space-2xl;
+  padding: $space-lg $space-2xl $space-2xl $space-2xl;
   border-radius: $bd-rounded;
   box-shadow: $box-shadow;
 }
@@ -16,4 +16,13 @@
     border: 2px solid lighten($moderate-violet-clr, 15%);
   }
   
+}
+
+
+
+// 1000px
+@mixin desktop {
+  @media (min-width: 75em) {
+    @content;
+  }
 }
