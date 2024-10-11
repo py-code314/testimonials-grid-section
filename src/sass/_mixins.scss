@@ -1,16 +1,19 @@
 @use 'variables' as *;
 
+// Background and text colors for cards
 @mixin colors($bg-clr, $text-clr: $white-clr) {
   background-color: $bg-clr;
   color: $text-clr;
 }
 
+// General styling for cards
 @mixin card {
   padding: $space-lg $space-2xl $space-2xl $space-2xl;
   border-radius: $bd-rounded;
   box-shadow: $box-shadow;
 }
 
+// Image border for 1st and 4th card
 @mixin image-border {
   img {
     border: 2px solid lighten($moderate-violet-clr, 15%);
@@ -18,14 +21,14 @@
   
 }
 
-// 768px
+// Media query at 768px
 @mixin tablet {
   @media (min-width: 48em) {
     @content;
   }
 }
 
-// 1000px
+// Media query at 1200px
 @mixin desktop {
   @media (min-width: 75em) {
     @content;

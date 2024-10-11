@@ -1,3 +1,4 @@
+/* Global Reset */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -20,6 +21,7 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+/* Styles for body */
 body {
   min-height: 100svh;
   background-color: hsl(210, 46%, 95%);
@@ -32,6 +34,7 @@ body {
   padding: 4.5rem 1rem;
 }
 
+/* Hide page title */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -44,6 +47,7 @@ body {
   border: 0;
 }
 
+/* Grid layout for page content - mobile first */
 .testimonials {
   max-inline-size: clamp(20.438rem, 3.162rem + 73.709vw, 69.5rem);
   display: grid;
@@ -63,6 +67,7 @@ body {
   }
 }
 
+/* Styles for cards */
 .testimonial {
   padding: 1.5rem 2rem 2rem 2rem;
   border-radius: 0.5rem;
@@ -105,6 +110,7 @@ body {
   grid-area: kira;
 }
 
+/* Styles for top section of cards */
 figcaption {
   display: flex;
   gap: 1rem;
@@ -124,6 +130,7 @@ figcaption img {
   letter-spacing: 0.0009em;
 }
 
+/* Styles for text section of cards */
 .testimonial__para-1 {
   font-size: 1.25rem;
   font-weight: 600;

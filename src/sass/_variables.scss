@@ -1,16 +1,17 @@
 @use 'functions' as *;
 
+// Colors
 $moderate-violet-clr: hsl(263, 55%, 52%);
 $very-dark-grayish-blue-clr: hsl(217, 19%, 35%);
 $very-dark-blackish-blue-clr: hsl(219, 29%, 14%);
 $white-clr: hsl(0, 0%, 100%);
-// $light-gray-clr: hsl(0, 0%, 81%);
 $light-grayish-blue-clr: hsl(210, 46%, 95%);
-// $brand-secondary: hsl(228, 45%, 44%);
 
+// Text opacity
 $opacity-50: 50%;
 $opacity-70: 70%;
 
+// Typography
 $fs-sm: pxToRem(11);
 $fs-md: pxToRem(13);
 $fs-lg: pxToRem(20);
@@ -20,17 +21,17 @@ $fw-semibold: 600;
 
 $ff-barlow: "Barlow Semi Condensed", sans-serif;
 
+// Spacing
 $space-sm: pxToRem(14);
 $space-md: pxToRem(16);
 $space-lg: pxToRem(24);
 $space-xl: pxToRem(30);
 $space-2xl: pxToRem(32);
 $space-3xl: pxToRem(72);
-// $width-mobile: pxToRem(327);
-// $width-desktop: pxToRem(1112);
+
 $card-width: clamp(20.438rem, 3.162rem + 73.709vw, 69.5rem);
 
+// Utilities
 $box-shadow: pxToRem(20) pxToRem(8) pxToRem(50) pxToRem(-10) hsla(0, 0%, 0%, 0.3);
 $bd-rounded: pxToRem(8);
 
-// $clr: hsl(213, 12%, 35%);

@@ -1,7 +1,9 @@
+// Import partials
 @use 'variables' as *;
 @use 'reset' as *;
 @use 'mixins' as *;
 
+/* Styles for body */
 body {
   min-height: 100svh;
   background-color: $light-grayish-blue-clr;
@@ -14,6 +16,7 @@ body {
   padding: $space-3xl $space-md;
 }
 
+/* Hide page title */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -26,6 +29,7 @@ body {
   border: 0;
 }
 
+/* Grid layout for page content - mobile first */
 .testimonials {
   max-inline-size: $card-width;
   display: grid;
@@ -37,6 +41,7 @@ body {
     'kira';
   gap: $space-lg;
 
+  // Grid layout for tablet size
   @include tablet {
     grid-template: {
       columns: repeat(3, 1fr);
@@ -44,7 +49,7 @@ body {
         'kira kira kira';
     }
   }
-
+  // Grid layout for desktop
   @include desktop {
     grid-template: {
       columns: repeat(4, 1fr);
@@ -53,9 +58,10 @@ body {
   }
 }
 
+/* Styles for cards */
 .testimonial {
   @include card;
-
+  // Styles for card-1
   &:nth-child(1) {
     grid-area: daniel;
     @include colors($moderate-violet-clr);
@@ -69,17 +75,19 @@ body {
       background-position: top 0 right 20%;
     }
   }
-
+  // Image border for 1st and 4th card
   &:nth-child(1),
   &:nth-child(4) {
     @include image-border;
   }
 
+  // Styles for card-2
   &:nth-child(2) {
     grid-area: jonathan;
     @include colors($very-dark-grayish-blue-clr);
   }
 
+  // Tablet & desktop layouts for cards 2, 3, 4 & 5
   &:nth-child(2),
   &:nth-child(3),
   &:nth-child(4),
@@ -88,25 +96,30 @@ body {
     @include desktop;
   }
 
+  // Styles for card-3
   &:nth-child(3) {
     grid-area: jeanette;
   }
 
+  // Background and text colors for cards 3 & 5
   &:nth-child(3),
   &:nth-child(5) {
     @include colors($white-clr, $very-dark-grayish-blue-clr);
   }
 
+  // Styles for card-4
   &:nth-child(4) {
     grid-area: patrick;
     @include colors($very-dark-blackish-blue-clr);
   }
 
+  // Styles for card-5
   &:nth-child(5) {
     grid-area: kira;
   }
 }
 
+/* Styles for top section of cards */
 figcaption {
   display: flex;
   gap: $space-md;
@@ -127,6 +140,7 @@ figcaption {
   letter-spacing: 0.0009em;
 }
 
+/* Styles for text section of cards */
 .testimonial__para-1 {
   font-size: $fs-lg;
   font-weight: $fw-semibold;
