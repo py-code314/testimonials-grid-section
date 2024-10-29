@@ -71,7 +71,7 @@ body {
 .testimonial {
   padding: 1.5rem 2rem 2rem 2rem;
   border-radius: 0.5rem;
-  box-shadow: 1.25rem 0.5rem 3.125rem -0.625rem hsla(0, 0%, 0%, 0.3);
+  box-shadow: 0.625rem 0.5rem 1.875rem -1.25rem hsla(0, 0%, 0%, 0.3);
 }
 .testimonial:nth-child(1) {
   grid-area: daniel;
@@ -143,4 +143,8 @@ figcaption img {
   opacity: 70%;
   line-height: 1.4;
   letter-spacing: 0.005em;
+}
+
+.testimonial__para-2--opaque {
+  opacity: 50%;
 }
